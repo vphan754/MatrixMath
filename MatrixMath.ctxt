@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=MatrixMath
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ MatrixMath\ here.\r\n\r\n\ @author\ (\ Mr.\ Kim)\r\n\ @version\ ((October\ 28.\ 1029)\r\n
+comment1.params=in
+comment1.target=MatrixMath(int[][])
+comment2.params=
+comment2.target=int[]\ rowSum()
+comment3.params=
+comment3.target=double[]\ rowAve()
+comment4.params=
+comment4.target=int[]\ colSum()
+comment5.params=
+comment5.target=double[]\ colAve()
+numComments=6

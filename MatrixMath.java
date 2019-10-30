@@ -10,55 +10,63 @@ public class MatrixMath
     // instance variables - replace the example below with your own
     private int[][] data;
 
-    /**
-     * Constructor for objects of class MatrixMath
-     */
-    public MatrixMath(int[][] data)
+    public MatrixMath(int[][] in)
     {
-        // initialise instance variables
-       
+        data = in;
     }
 
-    /**
-     * Find the sum of all the elements in each row.
-     * 
-     *
-     * @return    int[]
-     */
     public int[] rowSum()
     {
-        return null;
+        int[] result = new int[data.length];
+        for (int i = 0; i<data.length; i++)
+        {
+            for (int j = 0; j<data[i].length; j++)
+            {
+                result[i]+=data[i][j];
+            }
+        }
+        return result;
     }
     
-        /**
-     * Find the average of all the values in each row
-     *
-     * @return    int[] 
-     */
     public double[] rowAve()
     {
-        return null;
+        double[] result = new double[data.length];
+        int[] rowSums = rowSum();
+        
+        for (int i = 0; i<rowSums.length; i++)
+        {
+            result[i] = rowSums[i]/(data[i].length*1.0d);
+        }
+        return result;
     }
     
-        /**
-     * Find the sum of all the numbers in column
-     * 
-     *
-     * @return    int[] 
-     */
+    
     public int[] colSum()
     {
-        return null;
+        int[] result = new int[data.length];
+        
+        //i = row number
+        //j = column number
+        
+        for (int i = 0; i<data.length; i++)
+        {
+            for (int j = 0; j<data[0].length; j++)
+            {
+                result[j] += data[i][j];
+            }
+        }
+        return result;
     }
     
-     /**
-     * Find the average of all the values in each row
-     *
-     * @return    int[] 
-     */
     public double[] colAve()
     {
-        return null;
+        double[] result = new double[data.length];
+        int[] colSums = colSum();
+        for (int i = 0; i<colSums.length; i++)
+        {
+            result[i]=colSums[i]/(data.length*1.0d);
+        }
+        return result;
     }
     
 }
