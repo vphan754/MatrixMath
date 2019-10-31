@@ -43,14 +43,14 @@ public class MatrixMath
     
     public int[] colSum()
     {
-        int[] result = new int[data.length];
+        int[] result = new int[data[0].length];
         
         //i = row number
         //j = column number
         
-        for (int i = 0; i<data.length; i++)
+        for (int j = 0; j<data[0].length; j++)
         {
-            for (int j = 0; j<data[0].length; j++)
+            for (int i = 0; i<data.length; i++)
             {
                 result[j] += data[i][j];
             }
@@ -60,7 +60,7 @@ public class MatrixMath
     
     public double[] colAve()
     {
-        double[] result = new double[data.length];
+        double[] result = new double[data[0].length];
         int[] colSums = colSum();
         for (int i = 0; i<colSums.length; i++)
         {

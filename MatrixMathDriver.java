@@ -29,9 +29,9 @@ public class MatrixMathDriver
         System.out.println("colaveB is" +Arrays.toString(mathB.colAve()));
         
         MatrixMath mathC = new MatrixMath(C);
-        System.out.println("rowsumB is "+Arrays.toString(mathC.rowSum()));
-        System.out.println("rowaveB is "+Arrays.toString(mathC.rowAve()));
-        System.out.println("colsumB is "+Arrays.toString(mathC.colSum()));
-        System.out.println("colaveB is" +Arrays.toString(mathC.colAve()));
+        System.out.println("rowsumC is "+Arrays.toString(mathC.rowSum()));
+        System.out.println("rowaveC is "+Arrays.toString(mathC.rowAve()));
+        System.out.println("colsumC is "+Arrays.toString(mathC.colSum()));
+        System.out.println("colaveC is" +Arrays.toString(mathC.colAve()));
     }
 }
